@@ -67,7 +67,9 @@ body {
 		      		<div class="form-group">
 					
 					<?php  
-
+							if(isset($_REQUEST["notexist"]) === true) {
+								echo "<div class='alert alert-danger' role = 'alert'>
+								Username does not exist...</div>";}
 							else if(isset($_REQUEST["wrongpass"]) === true) {
 								echo "<div class='alert alert-warning' role = 'alert'>
 								Wrong Password...</div>";}
