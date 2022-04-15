@@ -2,7 +2,7 @@
 //start session function
 session_start();
 
-$NameOfUser = "Ianmapacpac12";
+$NameOfUser = "IanMapacpac";
 $PassOfUser = "ian";
 $full_name = "Ian Mapacpac";
 $full_address = "Brgy. Tabi Boac, Marinduque";
@@ -67,9 +67,7 @@ body {
 		      		<div class="form-group">
 					
 					<?php  
-					if(isset($_REQUEST["notexist"]) === true) {
-							echo "<div class='alert alert-danger' role = 'alert'>
-							Username does not exist...</div>";}
+
 							else if(isset($_REQUEST["wrongpass"]) === true) {
 								echo "<div class='alert alert-warning' role = 'alert'>
 								Wrong Password...</div>";}
@@ -116,7 +114,13 @@ body {
   <!--<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script> 
+
+  php if(isset($_REQUEST["showall"]) === true) {
+							echo "hi";
+                }
+                   ?><div class='col-lg-6 pr-lg-1 mb-2'><img src='images\3.png' alt='' class='img-fluid rounded shadow-sm'></div>
+				   <div class='col-lg-6 pl-lg-1'><img src='images\4.png' alt='' class='img-fluid rounded shadow-sm'></div>-->
 
 	</body>
 </html>
